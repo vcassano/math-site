@@ -3,7 +3,9 @@ name: 'Matematica'
 description: 'Sitio Web del Departamento de Matematica de la Universidad Nacional de Rio Cuarto.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: ''
+url: "https://vcassano.github.io"
+baseurl: "/math-site"
+# baseurl: '' # LOCAL
 disqus: 'matwebsite'
 email: 'matematica@exa.unrc.edu.ar'
 #mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
