@@ -1,0 +1,17 @@
+cassanv:
+  name:           Valentin Cassano
+  id:             cassanv
+  avatar:         images/avatars/cassanv.png
+  keywords:       "Lógica Computacional"
+  site:           https://vcassano.github.io
+  email:          valentin@dc.exa.unrc.edu.ar
+  twitter:        https://twitter.com/valentincassano
+
+carmina:
+  name:           Carmina Alturria Lanzardo
+  id:             carmina
+  avatar:         images/avatars/carmina.png
+  keywords:       "Matemática Aplicada. Análisis Numérico."
+  site:           https://www.researchgate.net/profile/Carmina_Alturria_Lanzardo
+  email:          calturrial@exa.unrc.edu.ar
+  twitter:        

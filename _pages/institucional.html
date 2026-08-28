@@ -1,0 +1,155 @@
+---
+title: "Institucional"
+layout: default
+permalink: "/institucional.html"
+---
+
+<div class="container">
+
+  <!-- HISTORIA -->
+  <div style="padding: 10px 0px">
+    <h4 class="font-weight-bold spanborder"><span>Historia</span></h4>
+      <p>
+        Breve reseña historica del departamento ...
+      </p>
+  </div>
+
+  <!-- AUTORIDADES -->
+  <div style="padding: 10px 0px">
+    <h4 class="font-weight-bold spanborder"><span>Autoridades</span></h4>
+      <p style="padding: 10px 0px;">
+        Breve reseña de la gestion del departamento: dirección y secretarías.
+      </p>
+
+    <h6 class="font-weight-bold spanborder">
+      <span>
+        Las autoridades actuales del Departamento de Matemática son:
+      </span>
+    </h6>
+    <div class="row" style="padding-bottom: 10px;">
+    {% for ejecutivo in site.data.institucional %}
+      {% if ejecutivo[1].ejecutivo %}
+      <div class="col-lg-6 mb-4">
+          <div class="p-4 border rounded">
+            <div class="row">
+              <div class="col-md-3 mb-4 mb-md-0">
+                <img alt="{{ ejecutivo[1].name }}" src="{{site.baseurl}}/{{ ejecutivo[1].avatar }}" class="rounded-circle" height="80" width="80">
+              </div>
+              <div class="col-md-9">
+                <h5 class="text-dark mb-0"> {{ ejecutivo[1].name }} </h5>
+                <div class="excerpt">{{ ejecutivo[1].ejecutivo }}</div>
+                <div class="icon-block mt-3 d-flex justify-content-between">
+                  <div>
+                    <a target="_blank" href="mailto:{{ consejero[1].email }}"><i class="fa fa-envelope text-muted" aria-hidden="true"></i></a> &nbsp
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+  <!-- CONSEJO -->
+  <div style="padding: 10px 0px">
+    <h4 class="font-weight-bold spanborder"><span>Consejo Departamental</span></h4>
+      <p style="padding: 10px 0px;">
+        Breve reseña del consejo departamental: composición y funciones.
+      </p>
+
+    <h6 class="font-weight-bold spanborder">
+      <span>
+        Son miembros actuales del Consejo Departamental por el Claustro Docente:
+      </span>
+    </h6>
+    <div class="row" style="padding-bottom: 10px">
+    {% for consejero in site.data.institucional %}
+      {% if consejero[1].consejero %}
+      <div class="col-lg-6 mb-4">
+          <div class="p-4 border rounded">
+            <div class="row">
+              <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ consejero[1].name }}" src="{{site.baseurl}}/{{ consejero[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
+              <div class="col-md-9">
+                <h5 class="text-dark mb-0"> {{ consejero[1].name }} </h5>
+                <div class="excerpt">{{ consejero[1].consejero }}</div>
+                <div class="icon-block mt-3 d-flex justify-content-between">
+                  <div>
+                    <a target="_blank" href="mailto:{{ consejero[1].email }}"><i class="fa fa-envelope text-muted" aria-hidden="true"></i></a> &nbsp
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+
+    <h6 class="font-weight-bold spanborder">
+      <span>
+        Son miembros actuales del Consejo Departamental por el Claustro Estudiantes:
+      </span>
+    </h6>
+    <div class="row" style="padding-bottom: 10px">
+    {% for consejero in site.data.institucional %}
+      {% if consejero[1].estudiante %}
+      <div class="col-lg-6 mb-4">
+          <div class="p-4 border rounded">
+            <div class="row">
+              <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ consejero[1].name }}" src="{{site.baseurl}}/{{ consejero[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
+              <div class="col-md-9">
+                <h5 class="text-dark mb-0"> {{ consejero[1].name }} </h5>
+                <div class="excerpt">{{ consejero[1].estudiante }}</div>
+                <div class="icon-block mt-3 d-flex justify-content-between">
+                  <div>
+                    <a target="_blank" href="mailto:{{ consejero[1].email }}"><i class="fa fa-envelope text-muted" aria-hidden="true"></i></a> &nbsp
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+  <!-- CURRICULAR -->
+  <div style="padding: 10px 0px">
+    <h4 class="font-weight-bold spanborder"><span>Comisión Curricular</span></h4>
+      <p style="padding: 10px 0px;">
+        Breve reseña de las comisiones curriculares del departamento: composición y funciones.
+      </p>
+
+    <h6 class="font-weight-bold spanborder">
+      <span>
+        Son miembros actuales de la Comisión Curricular Departamental:
+      </span>
+    </h6>
+    <div class="row" style="padding-bottom: 10px">
+    {% for curricular in site.data.institucional %}
+      {% if curricular[1].curricular %}
+      <div class="col-lg-6 mb-4">
+          <div class="p-4 border rounded">
+            <div class="row">
+              <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ consejero[1].name }}" src="{{site.baseurl}}/{{ curricular[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
+              <div class="col-md-9">
+                <h5 class="text-dark mb-0"> {{ curricular[1].name }} </h5>
+                <div class="excerpt">{{ curricular[1].curricular }}</div>
+                <div class="icon-block mt-3 d-flex justify-content-between">
+                  <div>
+                    <a target="_blank" href="mailto:{{ curricular[1].email }}"><i class="fa fa-envelope text-muted" aria-hidden="true"></i></a> &nbsp
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+</div>

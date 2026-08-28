@@ -1,0 +1,74 @@
+cassanv:
+  nombre:         "Valentin Cassano"
+  cargo:          ASISTENTE
+  titulo:         "Dr. en Ciencias de la Computación"
+  intereses:      "Lógica Formal y Computación. Lógica Nomonótona. Lógica via Álgebra."
+  email:          valentin@dc.exa.unrc.edu.ar
+  avatar:         images/avatars/cassanv.png
+  twitter:        https://twitter.com/valentincassano
+  posts:          cassanv
+
+dferreyra:
+  nombre:         David Ferreyra
+  cargo:          ASISTENTE
+  titulo:         "Dr. en Matemática"
+  intereses:      "Análisis Matricial. Inversas Generalizadas. Teoría de Aproximación. Mejor Aproximación Local."
+  email:          deferreyra@exa.unrc.edu.ar
+  avatar:         images/avatars/dferreyra.jpg
+  site:           https://www.researchgate.net/profile/David-Ferreyra
+  twitter:        https://twitter.com/FerreyraDavid
+
+flevis:
+  nombre:         Fabian Levis
+  cargo:          IND
+  titulo:         "Dr. en Matemática"
+  email:          flevis@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+fmazzone:
+  nombre:         Fernando Mazzone
+  cargo:          ADJ
+  titulo:         "Dr. en Matemática"
+  email:          fmazzone@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+calturria:
+  nombre:         Carmina Alturria
+  cargo:          DOC
+  titulo:         "Lic. en Matemática"
+  email:          calturria@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+sdemaria:
+  nombre:         Stefania Demaria
+  cargo:          DOC
+  titulo:         "Lic. en Matemática"
+  email:          sdemaria@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+ddutto:
+  nombre:         Danae Dutto
+  cargo:          DOC
+  titulo:         "Prof. en Matemática"
+  area:           "Ciencias de la Computación"
+  phd:            "Lógica Modal. Lógica con Datos."
+  email:          ddutto@dc.exa.unrc.edu.ar
+  avatar:         images/avatars/ddutto.jpg
+
+vnavarro:
+  nombre:         Victoria Navarro
+  cargo:          DOC
+  titulo:         "Lic. en Matemática"
+  area:           "Ciencias de la Computación"
+  phd:            "Lógica Deontica. Lógica Algebraica."
+  email:          vnavarro@dc.exa.unrc.edu.ar
+  avatar:         images/avatars/vnavarro.jpg
+
+bmilanesio:
+  nombre:         Bettina Milanesio
+  cargo:          DOC
+  titulo:         "Prof. en Matemática"
+  area:           "Ciencias de la Computación"
+  phd:            "Lógica Dinámica. Lógica Nomonótona."
+  email:          bmilanesio@dc.exa.unrc.edu.ar
+  avatar:         images/avatars/bmilanesio.jpg

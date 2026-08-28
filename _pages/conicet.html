@@ -1,0 +1,228 @@
+---
+title: "CONICET"
+layout: default
+permalink: "/conicet.html"
+---
+
+<div class="container">
+
+  <!-- INDEPENDIENTE -->
+  <div style="padding: 10px 0px">
+    <h5 class="font-weight-bold spanborder"><span>Investigadores Independientes</span></h5>
+    <div class="row" style="padding-bottom: 10px">
+    {% for person in site.data.conicet %}
+      {% if person[1].cargo == "IND" %}
+      <div class="col-lg-6 mb-4">
+        <div class="p-4 border rounded">
+          <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+              <img alt="{{ person[1].name }}" src="{{site.baseurl}}/{{ person[1].avatar }}" class="rounded-circle" height="80" width="80">
+            </div>
+            <div class="col-md-9">
+              <h6 class="text-dark mb-0"> {{ person[1].nombre }} </h6>
+              <div class="excerpt">{{ person[1].titulo }}</div>
+              <div class="excerpt">{{ person[1].intereses }}</div>
+              <div class="icon-block mt-3 d-flex justify-content-between">
+                <div>
+                  {% if person[1].email %}
+                  <a target="_blank" href="mailto:{{ person[1].email }}">
+                    <i class="fa fa-envelope text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].site %}
+                  <a target="_blank" href="{{ person[1].site }}">
+                    <i class="fa fa-globe text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].twitter %}
+                  <a target="_blank" href="{{ person[1].twitter }}">
+                    <i class="fab fa-twitter text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].instagram %}
+                  <a target="_blank" href="{{ person[1].instagram }}">
+                    <i class="fab fa-instagram text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].posts %}
+                  <a href="{{site.baseurl}}/author-{{person[1].posts}}.html">
+                    <i class="fa fa-user-circle text-muted" aria-hidden="true"></i>
+                    <!-- <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small> -->
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+  <!-- ADJUNTO -->
+  <div style="padding: 10px 0px">
+    <h5 class="font-weight-bold spanborder"><span>Investigadores Adjuntos</span></h5>
+    <div class="row" style="padding-bottom: 10px">
+    {% for person in site.data.conicet %}
+      {% if person[1].cargo == "ADJ" %}
+      <div class="col-lg-6 mb-4">
+        <div class="p-4 border rounded">
+          <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+              <img alt="{{ person[1].name }}" src="{{site.baseurl}}/{{ person[1].avatar }}" class="rounded-circle" height="80" width="80">
+            </div>
+            <div class="col-md-9">
+              <h6 class="text-dark mb-0"> {{ person[1].nombre }} </h6>
+              <div class="excerpt">{{ person[1].intereses }}</div>
+              <div class="icon-block mt-3 d-flex justify-content-between">
+                <div>
+                  {% if person[1].email %}
+                  <a target="_blank" href="mailto:{{ person[1].email }}">
+                    <i class="fa fa-envelope text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].site %}
+                  <a target="_blank" href="{{ person[1].site }}">
+                    <i class="fa fa-globe text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].twitter %}
+                  <a target="_blank" href="{{ person[1].twitter }}">
+                    <i class="fab fa-twitter text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].instagram %}
+                  <a target="_blank" href="{{ person[1].instagram }}">
+                    <i class="fab fa-instagram text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].posts %}
+                  <a href="{{site.baseurl}}/author-{{person[1].posts}}.html">
+                    <i class="fa fa-user-circle text-muted" aria-hidden="true"></i>
+                    <!-- <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small> -->
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+  <!-- ASISTENTE -->
+  <div style="padding: 10px 0px">
+    <h5 class="font-weight-bold spanborder"><span>Investigadores Asistentes</span></h5>
+    <div class="row" style="padding-bottom: 10px">
+    {% for person in site.data.conicet %}
+      {% if person[1].cargo == "ASISTENTE" %}
+      <div class="col-lg-6 mb-4">
+        <div class="p-4 border rounded">
+          <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+              <img alt="{{ person[1].name }}" src="{{site.baseurl}}/{{ person[1].avatar }}" class="rounded-circle" height="80" width="80">
+            </div>
+            <div class="col-md-9">
+              <h6 class="text-dark mb-0"> {{ person[1].nombre }} </h6>
+              <div class="excerpt">{{ person[1].titulo }}</div>
+              <div class="excerpt">{{ person[1].intereses }}</div>
+              <div class="icon-block mt-3 d-flex justify-content-between">
+                <div>
+                  {% if person[1].email %}
+                  <a target="_blank" href="mailto:{{ person[1].email }}">
+                    <i class="fa fa-envelope text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].site %}
+                  <a target="_blank" href="{{ person[1].site }}">
+                    <i class="fa fa-globe text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].twitter %}
+                  <a target="_blank" href="{{ person[1].twitter }}">
+                    <i class="fab fa-twitter text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].instagram %}
+                  <a target="_blank" href="{{ person[1].instagram }}">
+                    <i class="fab fa-instagram text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].posts %}
+                  <a href="{{site.baseurl}}/author-{{person[1].posts}}.html">
+                    <i class="fa fa-user-circle text-muted" aria-hidden="true"></i>
+                    <!-- <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small> -->
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+  <!-- DOCTORALES -->
+  <div style="padding: 10px 0px">
+    <h5 class="font-weight-bold spanborder"><span>Becas Doctorales</span></h5>
+    <div class="row" style="padding-bottom: 10px">
+    {% for person in site.data.conicet %}
+      {% if person[1].cargo == "DOC" %}
+      <div class="col-lg-6 mb-4">
+        <div class="p-4 border rounded">
+          <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+              <img alt="{{ person[1].name }}" src="{{site.baseurl}}/{{ person[1].avatar }}" class="rounded-circle" height="80" width="80">
+            </div>
+            <div class="col-md-9">
+              <h6 class="text-dark mb-0"> {{ person[1].nombre }} </h6>
+              <div class="excerpt">{{ person[1].area }}</div>
+              <div class="excerpt">{{ person[1].phd }}</div>
+              <div class="icon-block mt-3 d-flex justify-content-between">
+                <div>
+                  {% if person[1].email %}
+                  <a target="_blank" href="mailto:{{ person[1].email }}">
+                    <i class="fa fa-envelope text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].site %}
+                  <a target="_blank" href="{{ person[1].site }}">
+                    <i class="fa fa-globe text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].twitter %}
+                  <a target="_blank" href="{{ person[1].twitter }}">
+                    <i class="fab fa-twitter text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].instagram %}
+                  <a target="_blank" href="{{ person[1].instagram }}">
+                    <i class="fab fa-instagram text-muted" aria-hidden="true"></i>
+                  </a> &nbsp;
+                  {% endif %}
+                  {% if person[1].posts %}
+                  <a href="{{site.baseurl}}/author-{{person[1].posts}}.html">
+                    <i class="fa fa-user-circle text-muted" aria-hidden="true"></i>
+                    <!-- <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small> -->
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+</div>

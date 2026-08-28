@@ -1,0 +1,29 @@
+---
+title: "Extension"
+layout: default
+permalink: "/extension.html"
+---
+
+<div class="container">
+
+  <div style="padding: 10px 0px">
+
+    <div class="row" style="padding-bottom: 10px">
+    {% for project in site.data.extension %}
+
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="{{site.baseurl}}/{{ project[1].avatar }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ project[1].nombre }}</h5>
+            <p class="card-text" style="font-size: 14px;">{{ project[1].descripcion }}</p>
+            <a href="{{ grupo[1].site }}" target="_blank" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+    </div>
+  </div>
+
+</div>

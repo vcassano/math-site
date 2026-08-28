@@ -1,0 +1,96 @@
+# TITULARES
+
+setchegaray:
+  nombre:         Silvia Etchegaray
+  cargo:          PTI
+  titulo:         "Mg. en Didáctica de la Matemática"
+  email:          setchegaray@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+fmazzone:
+  nombre:         Fernando Mazzone
+  cargo:          PTI
+  titulo:         "Dr. en Matemática"
+  email:          fmazzone@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+# ASOCIADOS
+
+cgariboldi:
+  nombre:         Claudia Gariboldi
+  cargo:          PAS
+  titulo:         "Dr. en Matemática"
+  email:          cgariboldi@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+flevis:
+  nombre:         Fabian Levis
+  cargo:          PAS
+  titulo:         "Dr. en Matemática"
+  email:          flevis@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+# ADJUNTOS
+
+dferreyra:
+  nombre:         David Ferreyra
+  cargo:          PAD
+  titulo:         "Dr. en Matemática"
+  intereses:      "Análisis Matricial. Inversas Generalizadas. Teoría de Aproximación. Mejor Aproximación Local."
+  email:          deferreyra@exa.unrc.edu.ar
+  avatar:         images/avatars/dferreyra.jpg
+  site:           https://www.researchgate.net/profile/David-Ferreyra
+  twitter:        https://twitter.com/FerreyraDavid
+
+cassanv:
+  nombre:         "Valentin Cassano"
+  cargo:          PAD
+  titulo:         "Dr. en Ciencias de la Computación"
+  intereses:      "Lógica Formal y Computación. Lógica Nomonótona. Lógica via Álgebra."
+  email:          valentin@dc.exa.unrc.edu.ar
+  avatar:         images/avatars/cassanv.png
+  posts:          cassanv
+  site:           https://vcassano.github.io
+  twitter:        https://twitter.com/valentincassano
+
+# JTPs
+
+ngallardo:
+  nombre:         Norma Gallardo
+  cargo:          JTP
+  titulo:         "Prof. de Matemática"
+  email:          ngallardoa@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+cbollo:
+  nombre:         Carolina Bollo
+  cargo:          JTP
+  titulo:         "Lic. en Matemática"
+  email:          cbollo@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+# AUXILIARES
+
+vnavarro:
+  nombre:         Victoria Navarro
+  cargo:          AUX
+  titulo:         "Lic. en Matemática"
+  email:          vnavarro@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+vorquera:
+  nombre:         Valentina Orquera
+  cargo:          AUX
+  titulo:         "Lic. en Matemática"
+  email:          vorquera@exa.unrc.edu.ar
+  avatar:         images/avatars/riddler.jpg
+
+carmina:
+  nombre:         Carmina Alturria Lanzardo
+  cargo:          AUX
+  titulo:         "Lic. en Matemática"
+  email:          calturrial@exa.unrc.edu.ar
+  avatar:         images/avatars/carmina.png
+  intereses:      "Matemática Aplicada. Análisis Numérico."
+  site:           https://www.researchgate.net/profile/Carmina_Alturria_Lanzardo
+  posts:          carmina

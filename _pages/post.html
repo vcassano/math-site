@@ -1,0 +1,64 @@
+---
+title: "Posts"
+layout: default
+permalink: "/posts.html"
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <!-- <h1 class="font-weight-bold title h6 text-uppercase mb-4">Posts</h1> -->
+
+        {% for tag in site.tags %}
+
+        {% if tag[0] != "institucional" %}
+
+          <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
+
+          {% assign pages_list = tag[1] %}
+          {% for post in pages_list %}
+          {% if post.title != null %}
+            {% if group == null or group == post.group %}
+
+              <div class="mb-5 d-flex justify-content-between">
+                <div class="pr-3">
+                  <h2 class="mb-1 h4 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+                  </h2>
+                  <p class="excerpt">
+                     {{ post.excerpt  | strip_html | strip_newlines | truncate: 186}}
+                  </p>
+                  <small class="d-block text-muted">
+                    en <span class="catlist">
+                    {% for category in post.categories %}
+                      <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a>
+                      <span class="sep">, </span>
+                    {% endfor %}
+                    </span>
+                  </small>
+                  <small class="text-muted">
+                    {{ post.date | date: '%b %d, %Y' }}
+                  </small>
+                </div>
+                {% if post.image %}
+                  <div class="col-md-3 pr-0 text-right" style="width:300px;height:150px;overflow:hidden">
+                    <a href="{{site.baseurl}}{{post.url}}">
+                      <img class="w-100" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
+                    </a>
+                  </div>
+                {% endif %}
+              </div>
+
+            {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% assign pages_list = nil %}
+          {% assign group = nil %}
+
+        {% endif %}
+
+        {% endfor %}
+
+        </div>
+    </div>
+</div>

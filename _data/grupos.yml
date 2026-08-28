@@ -1,0 +1,67 @@
+logica:
+  nombre:
+      "Logica Computacional"
+  descripcion:
+      "Los principales temas de investigación del grupo se encuentran en la intersección de la Lógica Formal y las Ciencias de la Computación. El grupo tiene lineas de investigación abiertas en el estudio de propiedades meta-lógicas de: lógicas nomonótonas; lógicas default; lógicas deónticas; lógicas dinámicas; y lógicas con datos."
+  avatar:
+      images/groups/logic-group.jpg
+  email:
+      valentin@dc.exa.unrc.edu.ar
+  site:
+      https://liisgroup.github.io/
+
+analisis:
+  nombre:
+      "Analisis"
+  descripcion:
+      ""
+  avatar:
+      images/groups/logic-group.jpg
+  email:
+
+  site:
+
+
+ecuaciones:
+  nombre:
+      "Ecuaciones"
+  descripcion:
+      ""
+  avatar:
+      images/groups/logic-group.jpg
+  email:
+
+  site:
+
+estadistica:
+  nombre:
+      "Estadistica"
+  descripcion:
+      ""
+  avatar:
+      images/groups/logic-group.jpg
+  email:
+
+  site:
+
+geometria:
+  nombre:
+      "Geometria"
+  descripcion:
+      ""
+  avatar:
+      images/groups/logic-group.jpg
+  email:
+      jbarros@exa.unrc.edu.ar
+  site:
+
+didactica:
+  nombre:
+      "Didactica"
+  descripcion:
+      ""
+  avatar:
+      images/groups/logic-group.jpg
+  email:
+
+  site:

@@ -1,0 +1,103 @@
+---
+title: "Departamento de Matematica"
+layout: default
+pagination:
+    enabled: true
+description: "Sition Web del Departamento de Matematica de la Universidad Nacional de Rio Cuarto."
+---
+
+<div class="container">
+
+{% if page.url == "/" %}
+
+  {% for post in site.posts %}
+  {% if post.tags contains "institucional" %}
+  <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+      <div class="pl-4 pr-0 h-100 tofront">
+          <div class="row justify-content-between">
+              <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+                  <h1 class="mb-3">{{post.title}}</h1>
+                  <p class="mb-3 lead">
+                      {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+                  </p>
+                  <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">leer más</a>
+              </div>
+              <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image;">
+                <img alt="{{ docente[1].name }}" src="{{site.baseurl}}/{{ post.image }}">
+              </div>
+              <!-- <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">
+              </div> -->
+          </div>
+      </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+{% endif %} <!--endif page url is / -->
+
+<div class="row mt-3">
+
+    <div class="col-md-8 main-loop">
+
+      <h4 class="font-weight-bold spanborder">
+        <span><a href="{{site.baseurl}}/posts.html">difusión</a></span>
+      </h4>
+
+        {% for post in site.posts limit:3 %}
+
+          <div class="mb-5 d-flex justify-content-between">
+            <div class="pr-3">
+              <h5 class="mb-1 h5 font-weight-bold">
+                <a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+              </h5>
+              <p class="excerpt">
+                 {{ post.excerpt  | strip_html | strip_newlines | truncate: 186}}
+              </p>
+              <small class="d-block text-muted">
+                en <span class="catlist">
+                {% for category in post.categories %}
+                  <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/posts.html#{{ category | downcase }}">{{ category }}</a>
+                  <span class="sep">, </span>
+                {% endfor %}
+                </span>
+              </small>
+              <small class="text-muted">
+                {{ post.date | date: '%b %d, %Y' }}
+              </small>
+            </div>
+            {% if post.image %}
+              <div class="col-md-3 pr-0 text-right" style="width:300px;height:175px;overflow:hidden">
+                <a href="{{site.baseurl}}{{post.url}}">
+                  <img class="w-100" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
+                </a>
+              </div>
+            {% endif %}
+          </div>
+
+        {% endfor %}
+
+    </div>
+
+    <div class="col-md-4">
+
+          <h4 class="font-weight-bold spanborder">
+            <span>
+              twitter
+            </span>
+          </h4>
+
+          <div class="scroll-area">
+            <a class="twitter-timeline"
+              data-tweet-limit="5"
+              data-height="200"
+              href="https://twitter.com/matematicaunrc?ref_src=twsrc%5Etfw">
+              matematica_unrc
+            </a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+
+    </div>
+
+</div>
+
+</div>

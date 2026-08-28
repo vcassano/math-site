@@ -1,0 +1,113 @@
+## EJECUTIVO
+
+director:
+  name:           David Ferreyra
+  avatar:         images/avatars/riddler.jpg
+  email:          direccion@mat.exa.unrc.edu.ar
+  ejecutivo:      "Director"
+
+academica:
+  name:           Maria Inés Markiewicz
+  avatar:         images/avatars/riddler.jpg
+  email:          academica@mat.exa.unrc.edu.ar
+  ejecutivo:      "Secretaria Asuntos Academicos"
+
+coordinador:
+  name:           Valentin Cassano
+  avatar:         images/avatars/cassanv.png
+  email:          coordinacion@mat.exa.unrc.edu.ar
+  ejecutivo:      "Secretario Coordinador"
+
+seguridad:
+  name:           Mr. Riddler
+  avatar:         images/avatars/riddler.jpg
+  email:          seguridad@mat.exa.unrc.edu.ar
+  ejecutivo:      "Colaborador de Seguridad y Medio Ambiente"
+
+## CONSEJO
+
+cgariboldi:
+  name:           Claudia Gariboldi
+  avatar:         images/avatars/riddler.jpg
+  email:          cgariboldi@exa.unrc.edu.ar
+  consejero:      Titular
+
+cbollo:
+  name:           Carolina Bollo
+  avatar:         images/avatars/riddler.jpg
+  email:          cbollo@exa.unrc.edu.ar
+  consejero:      Suplente
+
+fmazzone:
+  name:           Fernando Mazzone
+  avatar:         images/avatars/riddler.jpg
+  email:          fmazzone@exa.unrc.edu.ar
+  consejero:      Titular
+
+mruiz:
+  name:           Marcelo Ruiz
+  avatar:         images/avatars/riddler.jpg
+  email:          mruiz@exa.unrc.edu.ar
+  consejero:      Suplente
+
+mlicera:
+  name:           Mabel Licera
+  avatar:         images/avatars/riddler.jpg
+  email:          mlicera@exa.unrc.edu.ar
+  consejero:      Titular
+
+pkonic:
+  name:           Patricia Konic
+  avatar:         images/avatars/riddler.jpg
+  email:          pkonic@exa.unrc.edu.ar
+  consejero:      Suplente
+
+ngallardo:
+  name:           Norma Gallardo
+  avatar:         images/avatars/riddler.jpg
+  email:          ngallardo@exa.unrc.edu.ar
+  consejero:      Titular
+
+sbigolin:
+  name:           Sabina Bigolin
+  avatar:         images/avatars/riddler.jpg
+  email:          sbigolin@exa.unrc.edu.ar
+  consejero:      Suplente
+
+mrossani:
+  name:           Mara Rossani
+  avatar:         images/avatars/riddler.jpg
+  email:          mrossani@mat.exa.unrc.edu.ar
+  estudiante:     Titular
+
+vnegro:
+  name:           Vanina Negro
+  avatar:         images/avatars/riddler.jpg
+  email:          vnegro@mat.exa.unrc.edu.ar
+  estudiante:     Suplente
+
+nleiria:
+  name:           Natalia Leiria
+  avatar:         images/avatars/riddler.jpg
+  email:          nleiria@mat.exa.unrc.edu.ar
+  estudiante:     Titular
+
+astalar:
+  name:           Ariadna Stalar
+  avatar:         images/avatars/riddler.jpg
+  email:          astalar@mat.exa.unrc.edu.ar
+  estudiante:     Suplente
+
+## CURRICULAR
+
+uniqueid-1:
+  name:           Miembro 1
+  avatar:         images/avatars/riddler.jpg
+  email:          email@mat.exa.unrc.edu.ar
+  curricular:     Titular
+
+uniqueid-2:
+  name:           Miembro 2
+  avatar:         images/avatars/riddler.jpg
+  email:          email@mat.exa.unrc.edu.ar
+  curricular:     Suplente

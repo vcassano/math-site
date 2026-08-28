@@ -1,0 +1,36 @@
+---
+title: "Investigacion"
+layout: default
+permalink: "/grupos.html"
+---
+
+<div class="container">
+
+  <div style="padding: 10px 0px">
+
+    <div class="row" style="padding-bottom: 10px">
+    {% for grupo in site.data.grupos %}
+
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="{{site.baseurl}}/{{ grupo[1].avatar }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ grupo[1].nombre }}</h5>
+            <p class="card-text" style="font-size: 14px;">{{ grupo[1].descripcion }}</p>
+            <a target="_blank" href="{{ grupo[1].site }}">
+              <i class="fa fa-globe text-muted" aria-hidden="true"></i>
+            </a> &nbsp;
+            <!-- <a href="{{ grupo[1].site }}" target="_blank" class="stretched-link"></a> -->
+            <a href="mailto:{{ grupo[1].email }}">
+              <i class="fa fa-envelope text-muted" aria-hidden="true"></i>
+            </a> &nbsp;
+
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+    </div>
+  </div>
+
+</div>
